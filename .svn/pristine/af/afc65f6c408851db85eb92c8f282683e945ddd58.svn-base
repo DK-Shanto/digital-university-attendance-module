@@ -1,0 +1,306 @@
+.jms_block {
+	border: 1px solid #BCBCBC;
+	padding-left: 26px;
+	border-top: 4px solid #B0C4DE;
+	box-shadow: 5px 5px 14px #979797;
+	box-sizing: border-box;
+	margin-top: 4px;
+	padding-top: 10px;
+	position: relative;
+}
+.over{
+	overflow: auto;
+}
+.inline{
+	display: inline-block;
+}
+span{
+	font-weight: bold;
+}
+.jms_title {
+	font-size: 25px;
+	font-weight: bold;
+	float: left;
+	text-shadow: -1px 7px 13px;
+	padding-right: 10px;
+}
+.jms_Subtitle {
+	margin-top: 12.5px;
+	font-size: 11.5px;
+	font-style: italic;
+	font-family: Verdana;
+	margin-bottom: 18px;
+}
+.jms_PublishDate {
+	color: green;
+	font-style: italic;
+}
+.jms_Organization{
+	margin-left: 40px;
+}
+.jms_EmploymentType{
+	margin-left: 40px;
+}
+.jms_Qualification{
+
+}
+.jms_Gender{
+	margin-left: 40px;
+}
+.jms_AgeLimit{
+	margin-left: 40px;
+}
+.jms_NumberOfVacancy{
+	margin-left: 40px;
+}
+.jms_Email{
+
+}
+.jms_ContactNumber{
+	margin-left: 40px;
+}
+.jms_Salary{
+	margin-left: 40px;
+}
+.jms_Location{
+	margin-left: 40px;
+}
+.jms_JobExperience{
+
+}
+.jms_LastDateOfApplication {
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	color: red;
+	font-style: italic|bold;
+}
+.jms_submit {
+	color: white;
+	background: #218421;
+	border: none;
+	padding: 2px 30px;
+	font-size: 17px;
+	border-radius: 7px;
+	position: absolute;
+	top: 72px;
+	right: 11px;
+	transition: 0.5s ease;
+	cursor: pointer;
+}
+.jms_submit:hover{
+	background-color: #459545;
+	color: white;
+	box-shadow: 4px 6px 10px #757575;
+}
+
+#full_cv {
+	width: 900px;
+	margin: 0 auto;
+	border: 1px solid grey;
+	padding: 20px;
+}
+
+#jms_cv_header {
+	display: block;
+	position: relative;
+	margin-bottom: 2em;
+	padding-bottom: 2em;
+	border-bottom: 1px solid #ccc;
+}
+.jms_cv_body_ratio {
+	margin-bottom: 2em;
+	padding-bottom: 2em;
+	border-bottom: 1px solid #ccc;
+	display: inline-block;
+}
+#jms_name_appearence {
+	display: inline-block;
+}
+#jms_name_appearence h1 {
+	margin: 0px;
+	color: black;
+	font-weight: bold;
+}
+#jms_name_appearence h2 {
+	font-size: 20px;
+	margin: 0px;
+	padding: 0px;
+	outline: 0px;
+	font-style: italic;
+}
+#jms_cv_link {
+	float: right;
+	text-align: center;
+	box-sizing: border-box;
+}
+#jms_cv_link_down {
+	padding: 6px;
+	margin: 0px 27px -15px 27px;
+	background: red;
+	color: white;
+	display: block;
+}
+#jms_cv_link_email {
+	color: #A1140D;
+}
+.jms_cv_body{
+
+}
+.jms_cv_body_profile_head {
+	display: inline-block;
+	float: left;
+	width: 15%;
+}
+.jms_cv_body_profile_head h2 {
+	font-size: 150%;
+	font-style: italic;
+	font-weight: normal;
+	margin-top: 9px;
+}
+.jms_cv_body_profile_details {
+	width: 85%;
+}
+.jms_cv_body_profile_details p {
+	font-size: 110%;
+}
+.jms_cv_body_skills_header{
+	display: inline-block;
+	float: left;
+	width: 15%;
+}
+.jms_cv_body_skills_header h2 {
+	font-size: 150%;
+	font-style: italic;
+	font-weight: normal;
+	margin-top: 9px;
+}
+.jms_cv_body_skills_details {
+	width: 85%;
+	float: right;
+}
+.talent {
+	width: 32%;
+	float: left;
+}
+.talent h2{
+	font-size: 150%;
+	font-weight: normal;
+	margin-top: 9px;
+}
+.talent p{
+	font-size: 110%;
+}
+.width{
+	width: 100%;
+}
+.jms_cv_body_technical_header {
+	display: inline-block;
+	float: left;
+	width: 15%;
+}
+.jms_cv_body_technical_header h2{
+	font-size: 150%;
+	font-style: italic;
+	font-weight: normal;
+	margin-top: 9px;
+}
+.jms_cv_body_technical_details {
+	width: 85%;
+	float: right;
+}
+.jms_cv_body_technical_details p{
+	font-size: 110%;
+}
+.jms_cv_body_experience_header{
+	display: inline-block;
+	width: 15%;
+}
+.jms_cv_body_experience_header h2{
+	font-size: 150%;
+	font-style: italic;
+	font-weight: normal;
+	margin-top: 9px;
+}
+.jms_cv_body_experience_details{
+	width: 85%;
+	float: right;
+}
+.job {
+	position: relative;
+	margin-bottom: 1em;
+	padding-bottom: 1em;
+	border-bottom: 1px solid #ccc;
+}
+.job h2{
+	font-size: 150%;
+	font-weight: normal;
+	margin-top: 9px;
+}
+.job h3{
+	font-size: 120%;
+	font-weight: normal;
+	margin-top: 9px;
+}
+.job h4 {
+	position: absolute;
+	top: 0.35em;
+	right: 0;
+}
+.job:last-child{
+	border: none;
+}
+.job p{
+	font-size: 110%;
+}
+.jms_cv_body_education_header{
+	display: inline-block;
+	width: 15%;
+}
+.jms_cv_body_education_header h2{
+	font-size: 150%;
+	font-style: italic;
+	font-weight: normal;
+	margin-top: 9px;
+}
+.jms_cv_body_education_details{
+	width: 85%;
+	float: right;
+}
+.jms_cv_body_education_details h2{
+	font-size: 140%;
+	font-weight: normal;
+	margin-top: 9px;
+}
+.jms_cv_body_education_details h3{
+	font-size: 120%;
+	font-weight: normal;
+	margin-top: 9px;
+}
+#jms_cv_footer{
+	text-align: center;
+}
+.jms_cv_body_ratio {
+	margin-bottom: 2em;
+	padding-bottom: 2em;
+	border-bottom: 1px solid #ccc;
+	display: inline-block;
+}
+.footer_button{
+	text-align: center;
+	margin-top: 10px;
+}
+.edit_cv {
+	padding: 5px 64px;
+	font-size: 16px;
+	color: white;
+	background-color: green;
+}
+.edit_cv:hover{
+	color: green;
+	background-color: white;
+	text-decoration: underline;
+	border: 2px solid green;
+	transition-delay: 0.5s;
+	transition: ease;
+}

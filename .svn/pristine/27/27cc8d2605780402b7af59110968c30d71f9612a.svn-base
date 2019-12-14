@@ -1,0 +1,33 @@
+<?php
+$Serial=$_GET['val'];
+
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "cseku";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+$sql = "SELECT * FROM ams_asset WHERE ams_asset.serialNo='".$Serial."'";
+$res = $conn->query($sql);
+$result=$res->fetch_array();
+
+if (!empty($result)){
+    $sql="SELECT * FROM ams_repair WHERE ams_repair.asset_id='".$result['id']."' AND ams_repair.isReceived='0'";
+    $res=$conn->query($sql);
+    $result=$res->fetch_array();
+    if (empty($result)){
+        echo "hi";
+    }else{
+        echo "Asset Already Sent To Repair";
+    }
+}else{
+    echo "No Asset Found";
+}
+$conn->close();
+?>

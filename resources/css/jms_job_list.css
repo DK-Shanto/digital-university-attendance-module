@@ -1,0 +1,95 @@
+.jms_block {
+	border: 1px solid #BCBCBC;
+	padding-left: 26px;
+	border-top: 4px solid #B0C4DE;
+	box-shadow: 5px 5px 14px #979797;
+	box-sizing: border-box;
+	margin-top: 4px;
+	padding-top: 10px;
+	position: relative;
+}
+.over{
+	overflow: auto;
+}
+.inline{
+	display: inline-block;
+}
+span{
+	font-weight: bold;
+}
+.jms_title {
+	font-size: 25px;
+	font-weight: bold;
+	float: left;
+	text-shadow: -1px 7px 13px;
+	padding-right: 10px;
+}
+.jms_Subtitle {
+	margin-top: 12.5px;
+	font-size: 11.5px;
+	font-style: italic;
+	font-family: Verdana;
+	margin-bottom: 18px;
+}
+.jms_PublishDate {
+	color: green;
+	font-style: italic;
+}
+.jms_Organization{
+	margin-left: 40px;
+}
+.jms_EmploymentType{
+	margin-left: 40px;
+}
+.jms_Qualification{
+
+}
+.jms_Gender{
+	margin-left: 40px;
+}
+.jms_AgeLimit{
+	margin-left: 40px;
+}
+.jms_NumberOfVacancy{
+	margin-left: 40px;
+}
+.jms_Email{
+
+}
+.jms_ContactNumber{
+	margin-left: 40px;
+}
+.jms_Salary{
+	margin-left: 40px;
+}
+.jms_Location{
+	margin-left: 40px;
+}
+.jms_JobExperience{
+
+}
+.jms_LastDateOfApplication {
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	color: red;
+	font-style: italic;
+}
+.jms_submit {
+	color: white;
+	background: #218421;
+	border: none;
+	padding: 2px 30px;
+	font-size: 17px;
+	border-radius: 7px;
+	position: absolute;
+	top: 72px;
+	right: 11px;
+	transition: 0.5s ease;
+	cursor: pointer;
+}
+.jms_submit:hover{
+	background-color: #459545;
+	color: white;
+	box-shadow: 4px 6px 10px #757575;
+}

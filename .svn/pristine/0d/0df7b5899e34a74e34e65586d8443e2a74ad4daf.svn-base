@@ -1,0 +1,48 @@
+class VideoReply{
+    
+    private $_CommentID;
+    private $_ReplyID;
+    private $_Creator;
+    private $_Reply;
+    
+
+    public function ReplyID( $ReplyID ) {
+        $this->_ReplyID = $ReplyID;
+    }
+
+    public function getReplyID() {
+        return $this->_ReplyID;
+    }
+
+    public function setCommentID ( $CommentID ) {
+        $this->_CommentID = $CommentID;
+    }
+
+    public function getCommentID () {
+        return $this->_CommentID;
+    }
+
+
+    public function setReply( $Reply ) {
+        $this->_Reply = $Reply;
+    }
+
+    public function getReply() {
+        return $this->_Reply;
+    }
+
+
+    public function setCreator ( $Creator ) {
+        $this->_Creator = $Creator;
+    }
+
+    public function getCreator () {
+        return $this->_Creator;
+    }
+
+
+    
+
+    
+
+}

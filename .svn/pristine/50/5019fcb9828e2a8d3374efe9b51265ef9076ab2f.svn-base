@@ -1,0 +1,42 @@
+.hh1 {
+    text-align: center;
+    font-size: 25px;
+}
+#hh2
+{
+    font-size: 20px;
+}
+.aa
+{
+    text-align: center;
+    font-size: 15px;
+}
+
+.f1 input[type=number],{
+    text-align: center
+}
+
+input[type=number] {
+    display: block;
+    margin : 0 auto;
+    width: 80px;
+}
+#btn_s{
+    display: block;
+    margin :  auto;
+    
+}
+.t1, td, th {
+    border: 1px solid black;
+    text-align: center;
+    margin-left:auto; 
+    margin-right:auto;
+}
+td{
+    text-align: left;
+}
+#textboxid
+{
+    height:200px;
+    font-size:14pt;
+}
