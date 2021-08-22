@@ -96,7 +96,7 @@ Class CourseStudentRegistrationDAO{
 	}
 
 		public function getAllData($dt,$course_name,$course_session){
-		$query="SELECT * FROM student_attend WHERE att_date = '$dt' AND course_name = '$course_name' AND session = '$course_session' ORDER BY roll ASC";
+		$query="SELECT * FROM tbl_student_attend WHERE att_date = '$dt' AND course_name = '$course_name' AND session = '$course_session' ORDER BY roll ASC";
 		return $getdata=$this->_DB->doQuery($query);
 	}
 
@@ -104,13 +104,13 @@ Class CourseStudentRegistrationDAO{
 		public function updateAttendance($dt,$attend,$course_name,$course_session){
 		foreach($attend as $atn_key=>$atn_value){
 			if($atn_value=="present"){
-				$stu_query="UPDATE student_attend
+				$stu_query="UPDATE tbl_student_attend
 							SET attend='present'
 							WHERE roll='".$atn_key." ' AND att_date='".$dt."' AND course_name='$course_name' AND session = '$course_session'";
 				$data_update=$this->_DB->doQuery($stu_query);
 			}
 			elseif($atn_value=="absent"){
-				$stu_query="UPDATE student_attend
+				$stu_query="UPDATE tbl_student_attend
 							SET attend='absent'
 							WHERE roll='".$atn_key." ' AND att_date='".$dt."' AND course_name='$course_name' AND session = '$course_session'";
 				$data_update=$this->_DB->doQuery($stu_query);
@@ -130,15 +130,15 @@ Class CourseStudentRegistrationDAO{
 	//change 
 
 		public function getDateList($course_name,$course_session){
-		$query="SELECT DISTINCT att_date FROM student_attend WHERE course_name ='$course_name' AND session = '$course_session'";
+		$query="SELECT DISTINCT att_date FROM tbl_student_attend WHERE course_name ='$course_name' AND session = '$course_session'";
 		return $getdata=$this->_DB->doQuery($query);
 
 	}
 	public function calculateResult($StudentID,$Session)
 	{
-		$stu_query="SELECT COUNT(DISTINCT(att_date)) FROM student_attend WHERE session='$Session'";
+		$stu_query="SELECT COUNT(DISTINCT(att_date)) FROM tbl_student_attend WHERE session='$Session'";
 		$s_total=$this->_DB->doQuery($stu_query);
-		$att_query="SELECT COUNT(attend) FROM student_attend WHERE session='$Session' AND roll='$StudentID' AND attend='present' ";
+		$att_query="SELECT COUNT(attend) FROM tbl_student_attend WHERE session='$Session' AND roll='$StudentID' AND attend='present' ";
 		$s_present=$this->_DB->doQuery($att_query);
 		while($res1=$s_total->fetch_assoc()){
 			$total=$res1['COUNT(DISTINCT(att_date))'];
@@ -172,7 +172,7 @@ Class CourseStudentRegistrationDAO{
 	}
 
 	public function insertAttendance($cur_date,$attend,$course_name,$course_session){
-		$query="SELECT DISTINCT att_date FROM student_attend";
+		$query="SELECT DISTINCT att_date FROM tbl_student_attend";
 		$getdata=$this->_DB->doQuery($query);
 		while($result=$getdata->fetch_assoc()){
 			$db_date=$result['att_date'];
@@ -184,11 +184,11 @@ Class CourseStudentRegistrationDAO{
 		
 		foreach($attend as $atn_key=>$atn_value){
 			if($atn_value=="present"){
-				$stu_query="INSERT INTO student_attend(roll,attend,att_date,course_name,session) VALUES('$atn_key','present',now(),'$course_name','$course_session')";
+				$stu_query="INSERT INTO tbl_student_attend(roll,attend,att_date,course_name,session) VALUES('$atn_key','present',now(),'$course_name','$course_session')";
 				$data_insert=$this->_DB->doQuery($stu_query);
 			}
 			elseif($atn_value=="absent"){
-				$stu_query="INSERT INTO student_attend(roll,attend,att_date,course_name,session) VALUES('$atn_key','absent',now(),'$course_name','$course_session')";
+				$stu_query="INSERT INTO tbl_student_attend(roll,attend,att_date,course_name,session) VALUES('$atn_key','absent',now(),'$course_name','$course_session')";
 				$data_insert=$this->_DB->doQuery($stu_query);
 			}
 		}
@@ -204,7 +204,7 @@ Class CourseStudentRegistrationDAO{
 	}
 
 	public function inserttry($StudentID, $StudentName){
-		$SQL = "INSERT into student_table(roll,name) VALUES('$StudentID','$StudentName')";
+		$SQL = "INSERT into tbl_student_table(roll,name) VALUES('$StudentID','$StudentName')";
 		$SQL1 = $this->_DB->doQuery($SQL);
 
 		    $Result = new Result();

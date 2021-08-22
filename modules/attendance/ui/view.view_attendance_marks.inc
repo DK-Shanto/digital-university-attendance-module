@@ -211,8 +211,8 @@ include_once MODULES_RESULT.'bao/class.marks_entrybao.inc';//depenency with modu
 <div class="panel-body"> 
 <table class="table table-bordered">
 	<tr>
-		<th width="25%">     University ID(Student ID)</th>
-		<th width="25%">     Marks(OUT OF 10)</th>
+		<th width="25%">     University ID (Student ID)</th>
+		<th width="25%">     Marks (OUT OF 10)</th>
 	</tr>
 
 	<?php

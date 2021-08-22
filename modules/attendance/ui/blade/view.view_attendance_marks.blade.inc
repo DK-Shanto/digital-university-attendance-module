@@ -42,9 +42,6 @@ $CourseTeacher->setTeacher($globalUser->getID());
 
 
 
-
-
-
 if(isset($_POST['load_marks']))
 {
   

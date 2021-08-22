@@ -13,6 +13,20 @@ include_once MODULES_USER.'bao/class.userbao.inc';//depenency with modules
 include_once MODULES_RESULT.'bao/class.marks_entrybao.inc';//depenency with modules
 
 ?>
+<div>
+	   <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+       <script>
+  $( function() {
+    $( "#datepicker" ).datepicker();
+    //onSelect: function() { 
+        //var dateObject = $(this).datepicker('getDate'); 
+    
+  } );
+  </script>
+</div>
 
 <?php
 $cur_date=date("Y-m-d");
@@ -123,10 +137,11 @@ $cur_date=date("Y-m-d");
 <div><strong>Currently Registered Students</strong></div>
 
   <!--<div align="center" style="font-size:20px"><strong>Date: </strong><?php echo $cur_date;?>-->
-  
+
     <!--<div class="panel-body">  -->
 		<div class="well text-center" style="font-size:20px">
-			<strong>Date: </strong><?php echo $cur_date;?>
+			<!--<strong>Date: </strong><?php echo $cur_date;?>-->
+			<strong>Date: </strong><input type="text" id="datepicker">
 		</div> 
 
 	
