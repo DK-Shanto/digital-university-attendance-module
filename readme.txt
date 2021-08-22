@@ -25,6 +25,8 @@ Asset Archive:
 
 Attendance:
 -----------
+1. Dabashis Kundu Shento (170209)
+2. Mostaq Ahmed Polok (170232)
 
 Blood:
 -------
